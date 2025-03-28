@@ -6,12 +6,13 @@
 }
 
 .topo{
-    background-color: rgb(1, 60, 255); /*cor do fundo do topo do site*/
+    background-color: rgb(151, 14, 110) /* muda a cor do topo do site*/
+    ; /*cor do fundo do topo do site*/
     height: 15vh; /* tamanho do topo do site 15% da tela*/
 }
 
 .conteudo{
-    background-color: rgb(151, 14, 110);
+    background-color: rgb(1, 60, 255); /* muda a cor do fundo do site*/
     height: 85vh; /* 85% da tela*/
 
 }
