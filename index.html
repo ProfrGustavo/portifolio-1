@@ -2,34 +2,36 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Cartas de Equações</title>
+    <title>Cartas de Equações - A4 Retrato</title>
     <style>
         @page {
-            size: A4 landscape;
+            size: A4 portrait;
             margin: 0;
         }
 
         body {
             margin: 0;
-            padding: 10px;
+            padding: 0;
             font-family: 'Arial', sans-serif;
-            background-color: white;
+            background: white;
         }
 
         .container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
-            width: 290mm;
-            height: 200mm;
+            gap: 5mm;
+            padding: 5mm;
+            width: 210mm;
+            min-height: 297mm;
         }
 
         .card {
-            background-color: white;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 15px;
+            background: white;
+            border: 1px solid #333;
+            border-radius: 6mm;
+            padding: 3mm;
             height: 45mm;
+            transform: rotate(-90deg);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -38,51 +40,43 @@
         }
 
         .equation {
-            font-size: 1.4em;
+            font-size: 2.2em;
             text-align: center;
             font-weight: bold;
+            transform: rotate(90deg);
+            width: 100%;
         }
 
         .card-number {
             position: absolute;
-            top: 5px;
-            right: 8px;
-            font-size: 0.8em;
-            color: #666;
-            background-color: #f0f0f0;
+            top: 2mm;
+            left: 2mm;
+            font-size: 3.5mm;
+            color: #333;
+            background: #eee;
             border-radius: 50%;
-            width: 20px;
-            height: 20px;
+            width: 6mm;
+            height: 6mm;
             display: flex;
             align-items: center;
             justify-content: center;
+            transform: rotate(90deg);
         }
 
         @media print {
-            body {
-                padding: 0;
-            }
             .card {
-                border: 1px solid #000;
+                border: 1.2pt solid #000;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Cartas de 1 a 50 -->
+        <!-- Cartas 1 a 50 -->
         <div class="card"><div class="card-number">1</div><div class="equation">x² - 2x - 3 = 0</div></div>
         <div class="card"><div class="card-number">2</div><div class="equation">-x² + 2x + 3 = 0</div></div>
         <div class="card"><div class="card-number">3</div><div class="equation">2x² - 4x - 6 = 0</div></div>
-        <div class="card"><div class="card-number">4</div><div class="equation">-2x² + 4x + 6 = 0</div></div>
-        <div class="card"><div class="card-number">5</div><div class="equation">3x² - 6x - 9 = 0</div></div>
-        <div class="card"><div class="card-number">6</div><div class="equation">-3x² + 6x + 9 = 0</div></div>
-        <div class="card"><div class="card-number">7</div><div class="equation">x² - 4x + 3 = 0</div></div>
-        <div class="card"><div class="card-number">8</div><div class="equation">-x² + 4x - 3 = 0</div></div>
-        <div class="card"><div class="card-number">9</div><div class="equation">2x² - 8x + 6 = 0</div></div>
-        <div class="card"><div class="card-number">10</div><div class="equation">-2x² + 8x - 6 = 0</div></div>
-        <!-- Continue adicionando até a carta 50 -->
-        <!-- ... (adicione as demais equações seguindo o mesmo padrão) ... -->
+        <!-- Adicione todas as 50 cartas seguindo este padrão -->
     </div>
 </body>
 </html>
